@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-and-test:
+    name: Build and run unit tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure CMake
+        run: cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug
+
+      - name: Build
+        run: cmake --build build -j
+
+      - name: Run unit tests
+        run: ctest --test-dir build --output-on-failure
+
+  rte-generation:
+    name: Regenerate Test RTEs and verify they are up to date
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 8 (required by the ArUnit headless generator)
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '8'
+
+      - name: Generate test RTEs from the AUTOSAR model
+        run: |
+          cd bceutil/Scripts
+          bash generateTestRte.sh
+
+      - name: Fail if committed RTEs differ from regenerated output
+        run: git diff --exit-code -- test_rte/generated
