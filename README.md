@@ -29,7 +29,10 @@ AutosarModel/             List of arxml files fed to the generator
 test_rte/generated/       Generated test RTE (ArUnit output, committed)
 lib/gtest/                Vendored googletest / googlemock
 specification/            BCE exterior light specification (PDF)
+test_rte/rte_platform/    Hand-maintained RTE platform headers (Rte.h)
 .github/workflows/ci.yml  CI/CD pipeline (GitHub Actions)
+Dockerfile                Pinned toolchain image (JDK 8 + build tools)
+Makefile                  Convenience targets (build / test / rte / docker-*)
 ```
 
 ## 2. AUTOSAR model
@@ -128,7 +131,11 @@ Generated per SWC:
 | `Rte_<SWC>_CanoeTraceDump.*` | CANoe-compatible trace dump |
 | `Rte_<SWC>_Type.h`, `Rte_Type.h` | RTE data types and CDS |
 | `<SWC>_FixtureBase.*` | base test fixture (time control + scheduling) |
-| `Rte.h` | RTE base header (`Std_ReturnType`), hand-provided |
+
+`Rte.h` (RTE base header with `Std_ReturnType`) is hand-maintained in
+`test_rte/rte_platform/` — deliberately **outside** the generator output
+directory so that regeneration (or ArUnit's `-clean_output` flag) can never
+delete it.
 
 Generation is **reproducible**: regenerating from the current model produces
 byte-identical output to the committed files. The generation scripts apply a
@@ -191,6 +198,24 @@ Two jobs run on every push/PR to `main`:
 | `build-and-test` | CMake configure → build → `ctest` |
 | `rte-generation` | Installs JDK 8 (Temurin), regenerates the test RTEs from the model with ArUnit, then `git diff --exit-code -- test_rte/generated` fails the build if the committed RTEs are out of date with the model |
 
+### Makefile / Docker
+
+```bash
+make build    # CMake configure + build
+make test     # build + ctest
+make rte      # regenerate the test RTEs (needs Java 8 locally)
+make clean    # remove the build directory
+
+make docker-test    # build + unit tests inside the pinned container
+make docker-rte     # regenerate the test RTEs inside the container
+```
+
+The `Dockerfile` pins the full toolchain (Eclipse Temurin JDK 8, CMake,
+GCC) so the 2021-era ArUnit generator and the build can be reproduced on
+any machine without installing Java 8 locally. The containerized
+regeneration was verified to produce byte-identical output to the
+committed RTEs.
+
 ## 7. Functional behavior (per BCE specification)
 
 Implemented so far (plumbing verified by tests):
@@ -203,3 +228,24 @@ Implemented so far (plumbing verified by tests):
 * `SwcLceMaster::run10ms()` — reads the six control signals; the
   activation/deactivation decision logic (spec activation tables) is still a
   placeholder and can be implemented against the generated fixture tests.
+
+## 8. Architect's roadmap (recommended next steps)
+
+Deliberately **not** done so far, in priority order:
+
+1. **System composition arxml** — the model currently has no
+   `COMPOSITION-SW-COMPONENT-TYPE` with assembly connectors
+   (`SwcLceComManager.comCTR_EL_F` → `SwcLceMaster.comCTR_EL_F`, etc.). Add
+   it together with the Master decision logic, enable the composition in the
+   generator (`-implicitCompositions` is already set), and add integration
+   tests that connect both SWCs through the generated RTE.
+2. **Master decision logic** — implement the activation/deactivation tables
+   from the specification (driving/position/parking light, battery rescue
+   mode, unsafe vehicle state handling).
+3. **AUTOSAR schema validation in CI** — `xmllint` the arxml files against
+   `autosar_4-2-2.xsd` (the xsd is currently not vendored in the repo).
+4. **Windows CI job** — the `.bat` workflow exists; a `windows-latest`
+   build job would guard MSVC compatibility (the vendored gtest already
+   carries the `_VARIADIC_MAX` workaround).
+5. **LICENSE** — the repository has no license file; the owner should pick
+   one (the SWC code carries Primatec Engineering attribution).

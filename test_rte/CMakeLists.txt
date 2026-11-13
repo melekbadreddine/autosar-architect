@@ -22,6 +22,9 @@ add_library(test_rte STATIC ${testRte_sourceFiles})
 target_include_directories(
     test_rte PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/generated
+    # Hand-maintained RTE platform headers (kept outside the ArUnit output
+    # directory so regeneration / -clean_output cannot delete them).
+    ${CMAKE_CURRENT_SOURCE_DIR}/rte_platform
 )
 
 target_link_libraries(test_rte PUBLIC lib_gtest)
