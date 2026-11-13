@@ -6,6 +6,7 @@
 #include <algorithm> // sort
 #include <ctime> //time, ctime
 #include <stdexcept>
+#include <limits>
 #include <sstream>
 
 #include "Rte_SwcLceComManager_CanoeTraceDump.h"
