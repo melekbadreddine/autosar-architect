@@ -19,6 +19,9 @@ public:
 	virtual Std_ReturnType Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_DR (IComLight_Ctrl_Inputs_CTR_FN_DR_Type CTR_FN_DR) = 0;
 	virtual Std_ReturnType Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_POS (IComLight_Ctrl_Inputs_CTR_FN_POS_Type CTR_FN_POS) = 0;
 	virtual Std_ReturnType Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_PAR (IComLight_Ctrl_Inputs_CTR_FN_PAR_Type CTR_FN_PAR) = 0;
+	virtual Std_ReturnType Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR (IComLight_Ctrl_Inputs_CTR_FN_DR_Type CTR_FN_DR) = 0;
+	virtual Std_ReturnType Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS (IComLight_Ctrl_Inputs_CTR_FN_POS_Type CTR_FN_POS) = 0;
+	virtual Std_ReturnType Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR (IComLight_Ctrl_Inputs_CTR_FN_PAR_Type CTR_FN_PAR) = 0;
 	virtual Std_ReturnType Rte_Read_SwcLceComManager_comLight_Ctrl_Inputs_ST_LP_LIN (IComLight_Ctrl_Inputs_ST_LP_LIN_Type* ST_LP_LIN) = 0;
 	virtual Std_ReturnType Rte_Read_SwcLceComManager_comBrightness_Rain_Sensor_ST_RB_LIN (IComBrightness_Rain_Sensor_ST_RB_LIN_Type* ST_RB_LIN) = 0;
 	virtual Std_ReturnType Rte_Read_SwcLceComManager_comCar_State_VEH_ST (IComCar_State_VEH_ST_Type* VEH_ST) = 0;

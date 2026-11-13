@@ -27,6 +27,12 @@ class Rte_SwcLceComManager_Mock : public Rte_SwcLceComManager_Interface
     
     MOCK_METHOD1(Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_PAR, Std_ReturnType(IComLight_Ctrl_Inputs_CTR_FN_PAR_Type CTR_FN_PAR));
     
+    MOCK_METHOD1(Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR, Std_ReturnType(IComLight_Ctrl_Inputs_CTR_FN_DR_Type CTR_FN_DR));
+    
+    MOCK_METHOD1(Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS, Std_ReturnType(IComLight_Ctrl_Inputs_CTR_FN_POS_Type CTR_FN_POS));
+    
+    MOCK_METHOD1(Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR, Std_ReturnType(IComLight_Ctrl_Inputs_CTR_FN_PAR_Type CTR_FN_PAR));
+    
     MOCK_METHOD1(Rte_Read_SwcLceComManager_comLight_Ctrl_Inputs_ST_LP_LIN, Std_ReturnType(IComLight_Ctrl_Inputs_ST_LP_LIN_Type* ST_LP_LIN));
     
     MOCK_METHOD1(Rte_Read_SwcLceComManager_comBrightness_Rain_Sensor_ST_RB_LIN, Std_ReturnType(IComBrightness_Rain_Sensor_ST_RB_LIN_Type* ST_RB_LIN));

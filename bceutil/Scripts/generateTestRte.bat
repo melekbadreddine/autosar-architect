@@ -17,7 +17,7 @@ set OUT_DIR=../../test_rte/generated
 set AUTOSAR_VERSION=40
 
 set CONFIG_FILE=../Config/GMockGenerator.config
-set SWCS=SwcLceComManager,SwcLceMaster
+set SWCS=SwcLceComManager SwcLceMaster
 set SWCS=%SWCS:"=%
 
 set ARUNIT_OPTIONS=-skipMerge -continueOnError -v %AUTOSAR_VERSION% -allTypes -implicitCompositions

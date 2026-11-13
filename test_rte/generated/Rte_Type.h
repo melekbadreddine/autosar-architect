@@ -191,6 +191,22 @@ typedef struct Rte_CDS_SwcLceComManager
     uint8 _dummy;
 } Rte_CDS_SwcLceComManager;
 
+/*********************************************************************
+ * component data structure for SWC: SwcLceMaster 
+ *********************************************************************/
+typedef struct Rte_CDS_SwcLceMaster
+{
+    /* Data Handles section*/
+    /* Per-Instance Memory Handles section*/
+    /* Inter-runnable Variable Handles section*/
+    /* Calibration Parameter Handles section*/
+    /* Exclusive-area Handles section*/
+    /* Port API Handles section*/
+    /* Inter Runnable Variable API Handles section*/
+    /* dummy value*/
+    uint8 _dummy;
+} Rte_CDS_SwcLceMaster;
+
 
 #ifdef __cplusplus
 } /* extern "C" */

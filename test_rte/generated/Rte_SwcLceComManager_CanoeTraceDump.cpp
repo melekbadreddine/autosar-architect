@@ -57,6 +57,9 @@ Rte_SwcLceComManager_CanoeTraceDump::Rte_SwcLceComManager_CanoeTraceDump(const R
  ,_Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_DR_BufItr()
  ,_Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_POS_BufItr()
  ,_Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_PAR_BufItr()
+ ,_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_BufItr()
+ ,_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_BufItr()
+ ,_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_BufItr()
  ,_Rte_Read_SwcLceComManager_comLight_Ctrl_Inputs_ST_LP_LIN_BufItr()
  ,_Rte_Read_SwcLceComManager_comBrightness_Rain_Sensor_ST_RB_LIN_BufItr()
  ,_Rte_Read_SwcLceComManager_comCar_State_VEH_ST_BufItr()
@@ -64,6 +67,9 @@ Rte_SwcLceComManager_CanoeTraceDump::Rte_SwcLceComManager_CanoeTraceDump(const R
  ,_Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_DR_returnValueItr()
  ,_Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_POS_returnValueItr()
  ,_Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_PAR_returnValueItr()
+ ,_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_returnValueItr()
+ ,_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_returnValueItr()
+ ,_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_returnValueItr()
  ,_Rte_Read_SwcLceComManager_comLight_Ctrl_Inputs_ST_LP_LIN_returnValueItr()
  ,_Rte_Read_SwcLceComManager_comBrightness_Rain_Sensor_ST_RB_LIN_returnValueItr()
  ,_Rte_Read_SwcLceComManager_comCar_State_VEH_ST_returnValueItr()
@@ -138,6 +144,9 @@ void Rte_SwcLceComManager_CanoeTraceDump::writeAscData()
     _Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_DR_BufItr = _trace->Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_DR_Trace_Begin();
     _Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_POS_BufItr = _trace->Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_POS_Trace_Begin();
     _Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_PAR_BufItr = _trace->Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_PAR_Trace_Begin();
+    _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_BufItr = _trace->Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_Trace_Begin();
+    _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_BufItr = _trace->Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_Trace_Begin();
+    _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_BufItr = _trace->Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_Trace_Begin();
     _Rte_Read_SwcLceComManager_comLight_Ctrl_Inputs_ST_LP_LIN_BufItr = _trace->Rte_Read_SwcLceComManager_comLight_Ctrl_Inputs_ST_LP_LIN_Trace_Begin();
     _Rte_Read_SwcLceComManager_comBrightness_Rain_Sensor_ST_RB_LIN_BufItr = _trace->Rte_Read_SwcLceComManager_comBrightness_Rain_Sensor_ST_RB_LIN_Trace_Begin();
     _Rte_Read_SwcLceComManager_comCar_State_VEH_ST_BufItr = _trace->Rte_Read_SwcLceComManager_comCar_State_VEH_ST_Trace_Begin();
@@ -145,6 +154,9 @@ void Rte_SwcLceComManager_CanoeTraceDump::writeAscData()
     _Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_DR_returnValueItr = _trace->Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_DR_ReturnValue_Begin();
     _Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_POS_returnValueItr = _trace->Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_POS_ReturnValue_Begin();
     _Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_PAR_returnValueItr = _trace->Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_PAR_ReturnValue_Begin();
+    _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_returnValueItr = _trace->Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_ReturnValue_Begin();
+    _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_returnValueItr = _trace->Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_ReturnValue_Begin();
+    _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_returnValueItr = _trace->Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_ReturnValue_Begin();
     _Rte_Read_SwcLceComManager_comLight_Ctrl_Inputs_ST_LP_LIN_returnValueItr = _trace->Rte_Read_SwcLceComManager_comLight_Ctrl_Inputs_ST_LP_LIN_ReturnValue_Begin();
     _Rte_Read_SwcLceComManager_comBrightness_Rain_Sensor_ST_RB_LIN_returnValueItr = _trace->Rte_Read_SwcLceComManager_comBrightness_Rain_Sensor_ST_RB_LIN_ReturnValue_Begin();
     _Rte_Read_SwcLceComManager_comCar_State_VEH_ST_returnValueItr = _trace->Rte_Read_SwcLceComManager_comCar_State_VEH_ST_ReturnValue_Begin();
@@ -156,6 +168,9 @@ void Rte_SwcLceComManager_CanoeTraceDump::writeAscData()
     	writeAscData_Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_DR_Trace(time);
     	writeAscData_Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_POS_Trace(time);
     	writeAscData_Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_PAR_Trace(time);
+    	writeAscData_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_Trace(time);
+    	writeAscData_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_Trace(time);
+    	writeAscData_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_Trace(time);
     	writeAscData_Rte_Read_SwcLceComManager_comLight_Ctrl_Inputs_ST_LP_LIN_Trace(time);
     	writeAscData_Rte_Read_SwcLceComManager_comBrightness_Rain_Sensor_ST_RB_LIN_Trace(time);
     	writeAscData_Rte_Read_SwcLceComManager_comCar_State_VEH_ST_Trace(time);
@@ -193,6 +208,39 @@ void Rte_SwcLceComManager_CanoeTraceDump::writeAscData()
     		writeAscDataFormatted("Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_PAR_Trace", 
     		sizeof(_Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_PAR_BufItr->first),_trace->getMaxTime(), 
     		NumberToHexString(_Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_PAR_BufItr->first));   
+    		}
+    }
+    if(_trace->Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_Trace_End() != _trace->Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_Trace_Begin())
+    {
+    	_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_BufItr = _trace->Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_Trace_End();
+    	--_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_BufItr;
+    	if(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_BufItr->second < _trace->getMaxTime())
+    	{
+    		writeAscDataFormatted("Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_Trace", 
+    		sizeof(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_BufItr->first),_trace->getMaxTime(), 
+    		NumberToHexString(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_BufItr->first));   
+    		}
+    }
+    if(_trace->Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_Trace_End() != _trace->Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_Trace_Begin())
+    {
+    	_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_BufItr = _trace->Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_Trace_End();
+    	--_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_BufItr;
+    	if(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_BufItr->second < _trace->getMaxTime())
+    	{
+    		writeAscDataFormatted("Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_Trace", 
+    		sizeof(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_BufItr->first),_trace->getMaxTime(), 
+    		NumberToHexString(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_BufItr->first));   
+    		}
+    }
+    if(_trace->Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_Trace_End() != _trace->Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_Trace_Begin())
+    {
+    	_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_BufItr = _trace->Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_Trace_End();
+    	--_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_BufItr;
+    	if(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_BufItr->second < _trace->getMaxTime())
+    	{
+    		writeAscDataFormatted("Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_Trace", 
+    		sizeof(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_BufItr->first),_trace->getMaxTime(), 
+    		NumberToHexString(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_BufItr->first));   
     		}
     }
     if(_trace->Rte_Read_SwcLceComManager_comLight_Ctrl_Inputs_ST_LP_LIN_Trace_End() != _trace->Rte_Read_SwcLceComManager_comLight_Ctrl_Inputs_ST_LP_LIN_Trace_Begin())
@@ -272,6 +320,39 @@ void Rte_SwcLceComManager_CanoeTraceDump::writeAscData()
     		sizeof(_Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_PAR_returnValueItr->first),
     		_trace->getMaxTime(), 
     		NumberToHexString(_Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_PAR_returnValueItr->first));  
+    	}
+    }
+    if(_trace->Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_ReturnValue_End() != _trace->Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_ReturnValue_Begin())
+    {
+    	_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_returnValueItr = _trace->Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_ReturnValue_End();
+    	--_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_returnValueItr;
+    	if(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_returnValueItr->second < _trace->getMaxTime()){
+    		writeAscDataFormatted("Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_ReturnValue", 
+    		sizeof(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_returnValueItr->first),
+    		_trace->getMaxTime(), 
+    		NumberToHexString(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_returnValueItr->first));  
+    	}
+    }
+    if(_trace->Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_ReturnValue_End() != _trace->Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_ReturnValue_Begin())
+    {
+    	_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_returnValueItr = _trace->Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_ReturnValue_End();
+    	--_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_returnValueItr;
+    	if(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_returnValueItr->second < _trace->getMaxTime()){
+    		writeAscDataFormatted("Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_ReturnValue", 
+    		sizeof(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_returnValueItr->first),
+    		_trace->getMaxTime(), 
+    		NumberToHexString(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_returnValueItr->first));  
+    	}
+    }
+    if(_trace->Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_ReturnValue_End() != _trace->Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_ReturnValue_Begin())
+    {
+    	_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_returnValueItr = _trace->Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_ReturnValue_End();
+    	--_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_returnValueItr;
+    	if(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_returnValueItr->second < _trace->getMaxTime()){
+    		writeAscDataFormatted("Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_ReturnValue", 
+    		sizeof(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_returnValueItr->first),
+    		_trace->getMaxTime(), 
+    		NumberToHexString(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_returnValueItr->first));  
     	}
     }
     if(_trace->Rte_Read_SwcLceComManager_comLight_Ctrl_Inputs_ST_LP_LIN_ReturnValue_End() != _trace->Rte_Read_SwcLceComManager_comLight_Ctrl_Inputs_ST_LP_LIN_ReturnValue_Begin())
@@ -380,6 +461,66 @@ void Rte_SwcLceComManager_CanoeTraceDump::writeAscData_Rte_Write_SwcLceComManage
 		++_Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_PAR_returnValueItr;
 	}
 }
+void Rte_SwcLceComManager_CanoeTraceDump::writeAscData_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_Trace(unsigned time)
+{
+	if(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_BufItr != _trace->Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_Trace_End() && _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_BufItr->second == time)
+	 {
+	 	writeAscDataFormatted("Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_Trace", 
+	 	sizeof(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_BufItr->first),
+	 	_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_BufItr->second, 
+	 	NumberToHexString(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_BufItr->first));
+	 	++_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_BufItr;
+	 }
+	
+	if(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_returnValueItr != _trace->Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_ReturnValue_End() && _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_returnValueItr->second == time)
+	{
+		writeAscDataFormatted("Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_ReturnValue", 
+		sizeof(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_returnValueItr->first),
+		_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_returnValueItr->second, 
+		NumberToHexString(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_returnValueItr->first));
+		++_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_returnValueItr;
+	}
+}
+void Rte_SwcLceComManager_CanoeTraceDump::writeAscData_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_Trace(unsigned time)
+{
+	if(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_BufItr != _trace->Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_Trace_End() && _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_BufItr->second == time)
+	 {
+	 	writeAscDataFormatted("Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_Trace", 
+	 	sizeof(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_BufItr->first),
+	 	_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_BufItr->second, 
+	 	NumberToHexString(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_BufItr->first));
+	 	++_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_BufItr;
+	 }
+	
+	if(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_returnValueItr != _trace->Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_ReturnValue_End() && _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_returnValueItr->second == time)
+	{
+		writeAscDataFormatted("Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_ReturnValue", 
+		sizeof(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_returnValueItr->first),
+		_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_returnValueItr->second, 
+		NumberToHexString(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_returnValueItr->first));
+		++_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_returnValueItr;
+	}
+}
+void Rte_SwcLceComManager_CanoeTraceDump::writeAscData_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_Trace(unsigned time)
+{
+	if(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_BufItr != _trace->Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_Trace_End() && _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_BufItr->second == time)
+	 {
+	 	writeAscDataFormatted("Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_Trace", 
+	 	sizeof(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_BufItr->first),
+	 	_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_BufItr->second, 
+	 	NumberToHexString(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_BufItr->first));
+	 	++_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_BufItr;
+	 }
+	
+	if(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_returnValueItr != _trace->Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_ReturnValue_End() && _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_returnValueItr->second == time)
+	{
+		writeAscDataFormatted("Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_ReturnValue", 
+		sizeof(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_returnValueItr->first),
+		_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_returnValueItr->second, 
+		NumberToHexString(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_returnValueItr->first));
+		++_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_returnValueItr;
+	}
+}
 void Rte_SwcLceComManager_CanoeTraceDump::writeAscData_Rte_Read_SwcLceComManager_comLight_Ctrl_Inputs_ST_LP_LIN_Trace(unsigned time)
 {
 	if(_Rte_Read_SwcLceComManager_comLight_Ctrl_Inputs_ST_LP_LIN_BufItr != _trace->Rte_Read_SwcLceComManager_comLight_Ctrl_Inputs_ST_LP_LIN_Trace_End() && _Rte_Read_SwcLceComManager_comLight_Ctrl_Inputs_ST_LP_LIN_BufItr->second == time)
@@ -474,6 +615,12 @@ void Rte_SwcLceComManager_CanoeTraceDump::generateDbcMap()
 		 DbcAttributesType(++functionId, sizeof(IComLight_Ctrl_Inputs_CTR_FN_POS_Type), std::numeric_limits<IComLight_Ctrl_Inputs_CTR_FN_POS_Type>::is_signed);
 	_dbcMap["Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_PAR_Trace"] = 
 		 DbcAttributesType(++functionId, sizeof(IComLight_Ctrl_Inputs_CTR_FN_PAR_Type), std::numeric_limits<IComLight_Ctrl_Inputs_CTR_FN_PAR_Type>::is_signed);
+	_dbcMap["Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_Trace"] = 
+		 DbcAttributesType(++functionId, sizeof(IComLight_Ctrl_Inputs_CTR_FN_DR_Type), std::numeric_limits<IComLight_Ctrl_Inputs_CTR_FN_DR_Type>::is_signed);
+	_dbcMap["Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_Trace"] = 
+		 DbcAttributesType(++functionId, sizeof(IComLight_Ctrl_Inputs_CTR_FN_POS_Type), std::numeric_limits<IComLight_Ctrl_Inputs_CTR_FN_POS_Type>::is_signed);
+	_dbcMap["Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_Trace"] = 
+		 DbcAttributesType(++functionId, sizeof(IComLight_Ctrl_Inputs_CTR_FN_PAR_Type), std::numeric_limits<IComLight_Ctrl_Inputs_CTR_FN_PAR_Type>::is_signed);
 	_dbcMap["Rte_Read_SwcLceComManager_comLight_Ctrl_Inputs_ST_LP_LIN_Trace"] = 
 		 DbcAttributesType(++functionId, sizeof(IComLight_Ctrl_Inputs_ST_LP_LIN_Type), std::numeric_limits<IComLight_Ctrl_Inputs_ST_LP_LIN_Type>::is_signed);
 	_dbcMap["Rte_Read_SwcLceComManager_comBrightness_Rain_Sensor_ST_RB_LIN_Trace"] = 
@@ -493,6 +640,12 @@ void Rte_SwcLceComManager_CanoeTraceDump::generateDbcMap()
 	_dbcMap["Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_POS_ReturnValue"] = 
 		DbcAttributesType(++functionId, sizeof(Std_ReturnType), std::numeric_limits<Std_ReturnType>::is_signed);
 	_dbcMap["Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_PAR_ReturnValue"] = 
+		DbcAttributesType(++functionId, sizeof(Std_ReturnType), std::numeric_limits<Std_ReturnType>::is_signed);
+	_dbcMap["Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_ReturnValue"] = 
+		DbcAttributesType(++functionId, sizeof(Std_ReturnType), std::numeric_limits<Std_ReturnType>::is_signed);
+	_dbcMap["Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_ReturnValue"] = 
+		DbcAttributesType(++functionId, sizeof(Std_ReturnType), std::numeric_limits<Std_ReturnType>::is_signed);
+	_dbcMap["Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_ReturnValue"] = 
 		DbcAttributesType(++functionId, sizeof(Std_ReturnType), std::numeric_limits<Std_ReturnType>::is_signed);
 	_dbcMap["Rte_Read_SwcLceComManager_comLight_Ctrl_Inputs_ST_LP_LIN_ReturnValue"] = 
 		DbcAttributesType(++functionId, sizeof(Std_ReturnType), std::numeric_limits<Std_ReturnType>::is_signed);

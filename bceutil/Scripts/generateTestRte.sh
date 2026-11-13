@@ -18,7 +18,7 @@ OUT_DIR=../../test_rte/generated
 AUTOSAR_VERSION=40
 
 CONFIG_FILE=../Config/GMockGenerator.config
-SWCS=SwcLceComManager,SwcLceMaster
+SWCS="SwcLceComManager SwcLceMaster"
 SWCS=${SWCS//\"/}
 
 ARUNIT_OPTIONS="-skipMerge -continueOnError -v $AUTOSAR_VERSION -allTypes -implicitCompositions"

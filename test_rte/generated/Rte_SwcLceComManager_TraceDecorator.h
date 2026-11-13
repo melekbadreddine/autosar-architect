@@ -60,6 +60,30 @@ public:
 	Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_PAR_ReturnValue_Begin() const { return _Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_PAR_ReturnValue.begin(); }
 	std::vector<std::pair<Std_ReturnType,unsigned> >::const_iterator
 	Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_PAR_ReturnValue_End() const { return _Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_PAR_ReturnValue.end(); }
+	std::vector<std::pair<IComLight_Ctrl_Inputs_CTR_FN_DR_Type,unsigned> >::const_iterator
+	Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_Trace_Begin() const { return _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_Trace.begin(); }
+	std::vector<std::pair<IComLight_Ctrl_Inputs_CTR_FN_DR_Type,unsigned> >::const_iterator
+	Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_Trace_End() const { return _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_Trace.end(); }
+	std::vector<std::pair<Std_ReturnType,unsigned> >::const_iterator
+	Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_ReturnValue_Begin() const { return _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_ReturnValue.begin(); }
+	std::vector<std::pair<Std_ReturnType,unsigned> >::const_iterator
+	Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_ReturnValue_End() const { return _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_ReturnValue.end(); }
+	std::vector<std::pair<IComLight_Ctrl_Inputs_CTR_FN_POS_Type,unsigned> >::const_iterator
+	Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_Trace_Begin() const { return _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_Trace.begin(); }
+	std::vector<std::pair<IComLight_Ctrl_Inputs_CTR_FN_POS_Type,unsigned> >::const_iterator
+	Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_Trace_End() const { return _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_Trace.end(); }
+	std::vector<std::pair<Std_ReturnType,unsigned> >::const_iterator
+	Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_ReturnValue_Begin() const { return _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_ReturnValue.begin(); }
+	std::vector<std::pair<Std_ReturnType,unsigned> >::const_iterator
+	Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_ReturnValue_End() const { return _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_ReturnValue.end(); }
+	std::vector<std::pair<IComLight_Ctrl_Inputs_CTR_FN_PAR_Type,unsigned> >::const_iterator
+	Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_Trace_Begin() const { return _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_Trace.begin(); }
+	std::vector<std::pair<IComLight_Ctrl_Inputs_CTR_FN_PAR_Type,unsigned> >::const_iterator
+	Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_Trace_End() const { return _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_Trace.end(); }
+	std::vector<std::pair<Std_ReturnType,unsigned> >::const_iterator
+	Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_ReturnValue_Begin() const { return _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_ReturnValue.begin(); }
+	std::vector<std::pair<Std_ReturnType,unsigned> >::const_iterator
+	Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_ReturnValue_End() const { return _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_ReturnValue.end(); }
 	std::vector<std::pair<IComLight_Ctrl_Inputs_ST_LP_LIN_Type,unsigned> >::const_iterator
 	Rte_Read_SwcLceComManager_comLight_Ctrl_Inputs_ST_LP_LIN_Trace_Begin() const { return _Rte_Read_SwcLceComManager_comLight_Ctrl_Inputs_ST_LP_LIN_Trace.begin(); }
 	std::vector<std::pair<IComLight_Ctrl_Inputs_ST_LP_LIN_Type,unsigned> >::const_iterator
@@ -98,6 +122,9 @@ public:
 	virtual Std_ReturnType Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_DR (IComLight_Ctrl_Inputs_CTR_FN_DR_Type CTR_FN_DR);
 	virtual Std_ReturnType Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_POS (IComLight_Ctrl_Inputs_CTR_FN_POS_Type CTR_FN_POS);
 	virtual Std_ReturnType Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_PAR (IComLight_Ctrl_Inputs_CTR_FN_PAR_Type CTR_FN_PAR);
+	virtual Std_ReturnType Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR (IComLight_Ctrl_Inputs_CTR_FN_DR_Type CTR_FN_DR);
+	virtual Std_ReturnType Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS (IComLight_Ctrl_Inputs_CTR_FN_POS_Type CTR_FN_POS);
+	virtual Std_ReturnType Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR (IComLight_Ctrl_Inputs_CTR_FN_PAR_Type CTR_FN_PAR);
 	virtual Std_ReturnType Rte_Read_SwcLceComManager_comLight_Ctrl_Inputs_ST_LP_LIN (IComLight_Ctrl_Inputs_ST_LP_LIN_Type* ST_LP_LIN);
 	virtual Std_ReturnType Rte_Read_SwcLceComManager_comBrightness_Rain_Sensor_ST_RB_LIN (IComBrightness_Rain_Sensor_ST_RB_LIN_Type* ST_RB_LIN);
 	virtual Std_ReturnType Rte_Read_SwcLceComManager_comCar_State_VEH_ST (IComCar_State_VEH_ST_Type* VEH_ST);
@@ -116,6 +143,12 @@ public:
 	std::vector<std::pair<Std_ReturnType,unsigned> > _Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_POS_ReturnValue;
 	std::vector<std::pair<IComLight_Ctrl_Inputs_CTR_FN_PAR_Type,unsigned> > _Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_PAR_Trace;
 	std::vector<std::pair<Std_ReturnType,unsigned> > _Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_PAR_ReturnValue;
+	std::vector<std::pair<IComLight_Ctrl_Inputs_CTR_FN_DR_Type,unsigned> > _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_Trace;
+	std::vector<std::pair<Std_ReturnType,unsigned> > _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_ReturnValue;
+	std::vector<std::pair<IComLight_Ctrl_Inputs_CTR_FN_POS_Type,unsigned> > _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_Trace;
+	std::vector<std::pair<Std_ReturnType,unsigned> > _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_ReturnValue;
+	std::vector<std::pair<IComLight_Ctrl_Inputs_CTR_FN_PAR_Type,unsigned> > _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_Trace;
+	std::vector<std::pair<Std_ReturnType,unsigned> > _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_ReturnValue;
 	std::vector<std::pair<IComLight_Ctrl_Inputs_ST_LP_LIN_Type,unsigned> > _Rte_Read_SwcLceComManager_comLight_Ctrl_Inputs_ST_LP_LIN_Trace;
 	std::vector<std::pair<Std_ReturnType,unsigned> > _Rte_Read_SwcLceComManager_comLight_Ctrl_Inputs_ST_LP_LIN_ReturnValue;
 	std::vector<std::pair<IComBrightness_Rain_Sensor_ST_RB_LIN_Type,unsigned> > _Rte_Read_SwcLceComManager_comBrightness_Rain_Sensor_ST_RB_LIN_Trace;

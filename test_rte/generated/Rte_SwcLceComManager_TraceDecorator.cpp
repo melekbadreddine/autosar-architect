@@ -23,6 +23,12 @@ Rte_SwcLceComManager_TraceDecorator::Rte_SwcLceComManager_TraceDecorator(Rte_Swc
 	,_Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_POS_ReturnValue()
 	,_Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_PAR_Trace()
 	,_Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_PAR_ReturnValue()
+	,_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_Trace()
+	,_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_ReturnValue()
+	,_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_Trace()
+	,_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_ReturnValue()
+	,_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_Trace()
+	,_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_ReturnValue()
 	,_Rte_Read_SwcLceComManager_comLight_Ctrl_Inputs_ST_LP_LIN_Trace()
 	,_Rte_Read_SwcLceComManager_comLight_Ctrl_Inputs_ST_LP_LIN_ReturnValue()
 	,_Rte_Read_SwcLceComManager_comBrightness_Rain_Sensor_ST_RB_LIN_Trace()
@@ -72,6 +78,48 @@ Std_ReturnType Rte_SwcLceComManager_TraceDecorator::Rte_Write_SwcLceComManager_c
 			, _currentTime));
 		if(_Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_PAR_ReturnValue.empty() || _Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_PAR_ReturnValue.back().first != returnVal)
 			_Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_PAR_ReturnValue.push_back(std::make_pair(returnVal, _currentTime));
+	}
+	return returnVal;
+} 
+Std_ReturnType Rte_SwcLceComManager_TraceDecorator::Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR(IComLight_Ctrl_Inputs_CTR_FN_DR_Type CTR_FN_DR)
+{
+	Std_ReturnType returnVal = _component->Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR(CTR_FN_DR);
+	if(_tracing)
+	{
+		if(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_Trace.empty() || _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_Trace.back().first != CTR_FN_DR
+		)
+			_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_Trace.push_back(std::make_pair(CTR_FN_DR
+			, _currentTime));
+		if(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_ReturnValue.empty() || _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_ReturnValue.back().first != returnVal)
+			_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_ReturnValue.push_back(std::make_pair(returnVal, _currentTime));
+	}
+	return returnVal;
+} 
+Std_ReturnType Rte_SwcLceComManager_TraceDecorator::Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS(IComLight_Ctrl_Inputs_CTR_FN_POS_Type CTR_FN_POS)
+{
+	Std_ReturnType returnVal = _component->Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS(CTR_FN_POS);
+	if(_tracing)
+	{
+		if(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_Trace.empty() || _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_Trace.back().first != CTR_FN_POS
+		)
+			_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_Trace.push_back(std::make_pair(CTR_FN_POS
+			, _currentTime));
+		if(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_ReturnValue.empty() || _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_ReturnValue.back().first != returnVal)
+			_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_ReturnValue.push_back(std::make_pair(returnVal, _currentTime));
+	}
+	return returnVal;
+} 
+Std_ReturnType Rte_SwcLceComManager_TraceDecorator::Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR(IComLight_Ctrl_Inputs_CTR_FN_PAR_Type CTR_FN_PAR)
+{
+	Std_ReturnType returnVal = _component->Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR(CTR_FN_PAR);
+	if(_tracing)
+	{
+		if(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_Trace.empty() || _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_Trace.back().first != CTR_FN_PAR
+		)
+			_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_Trace.push_back(std::make_pair(CTR_FN_PAR
+			, _currentTime));
+		if(_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_ReturnValue.empty() || _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_ReturnValue.back().first != returnVal)
+			_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_ReturnValue.push_back(std::make_pair(returnVal, _currentTime));
 	}
 	return returnVal;
 } 

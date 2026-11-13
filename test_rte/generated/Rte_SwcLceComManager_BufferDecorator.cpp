@@ -19,6 +19,9 @@ Rte_SwcLceComManager_BufferDecorator::Rte_SwcLceComManager_BufferDecorator(Rte_S
 ,  _Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_DR_Buf (0)
 ,  _Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_POS_Buf (0)
 ,  _Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_PAR_Buf (0)
+,  _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_Buf (0)
+,  _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_Buf (0)
+,  _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_Buf (0)
 ,  _Rte_Read_SwcLceComManager_comLight_Ctrl_Inputs_ST_LP_LIN_Buf (0)
 ,  _Rte_Read_SwcLceComManager_comBrightness_Rain_Sensor_ST_RB_LIN_Buf (0)
 ,  _Rte_Read_SwcLceComManager_comCar_State_VEH_ST_Buf (0)
@@ -26,6 +29,9 @@ Rte_SwcLceComManager_BufferDecorator::Rte_SwcLceComManager_BufferDecorator(Rte_S
 , _Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_DR_ReturnValue (0)
 , _Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_POS_ReturnValue (0)
 , _Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_PAR_ReturnValue (0)
+, _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_ReturnValue (0)
+, _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_ReturnValue (0)
+, _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_ReturnValue (0)
 , _Rte_Read_SwcLceComManager_comLight_Ctrl_Inputs_ST_LP_LIN_ReturnValue (0)
 , _Rte_Read_SwcLceComManager_comBrightness_Rain_Sensor_ST_RB_LIN_ReturnValue (0)
 , _Rte_Read_SwcLceComManager_comCar_State_VEH_ST_ReturnValue (0)
@@ -43,6 +49,18 @@ IComLight_Ctrl_Inputs_CTR_FN_POS_Type Rte_SwcLceComManager_BufferDecorator:: get
 IComLight_Ctrl_Inputs_CTR_FN_PAR_Type Rte_SwcLceComManager_BufferDecorator:: get_Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_PAR_Buf() const
 {
     return _Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_PAR_Buf;
+}
+IComLight_Ctrl_Inputs_CTR_FN_DR_Type Rte_SwcLceComManager_BufferDecorator:: get_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_Buf() const
+{
+    return _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_Buf;
+}
+IComLight_Ctrl_Inputs_CTR_FN_POS_Type Rte_SwcLceComManager_BufferDecorator:: get_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_Buf() const
+{
+    return _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_Buf;
+}
+IComLight_Ctrl_Inputs_CTR_FN_PAR_Type Rte_SwcLceComManager_BufferDecorator:: get_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_Buf() const
+{
+    return _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_Buf;
 }
 IComLight_Ctrl_Inputs_ST_LP_LIN_Type Rte_SwcLceComManager_BufferDecorator:: get_Rte_Read_SwcLceComManager_comLight_Ctrl_Inputs_ST_LP_LIN_Buf() const
 {
@@ -71,6 +89,18 @@ Std_ReturnType Rte_SwcLceComManager_BufferDecorator:: get_Rte_Write_SwcLceComMan
 Std_ReturnType Rte_SwcLceComManager_BufferDecorator:: get_Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_PAR_ReturnValue() const
 {
     return _Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_PAR_ReturnValue;
+}
+Std_ReturnType Rte_SwcLceComManager_BufferDecorator:: get_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_ReturnValue() const
+{
+    return _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_ReturnValue;
+}
+Std_ReturnType Rte_SwcLceComManager_BufferDecorator:: get_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_ReturnValue() const
+{
+    return _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_ReturnValue;
+}
+Std_ReturnType Rte_SwcLceComManager_BufferDecorator:: get_Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_ReturnValue() const
+{
+    return _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_ReturnValue;
 }
 Std_ReturnType Rte_SwcLceComManager_BufferDecorator:: get_Rte_Read_SwcLceComManager_comLight_Ctrl_Inputs_ST_LP_LIN_ReturnValue() const
 {
@@ -114,6 +144,30 @@ Std_ReturnType Rte_SwcLceComManager_BufferDecorator:: Rte_Write_SwcLceComManager
     // save to buffer ...
      _Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_PAR_Buf = CTR_FN_PAR;
      _Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_PAR_ReturnValue = _returnValue;
+    return _returnValue;
+}
+Std_ReturnType Rte_SwcLceComManager_BufferDecorator:: Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR (IComLight_Ctrl_Inputs_CTR_FN_DR_Type CTR_FN_DR)
+{
+    Std_ReturnType _returnValue = _component->Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR(CTR_FN_DR);
+    // save to buffer ...
+     _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_Buf = CTR_FN_DR;
+     _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR_ReturnValue = _returnValue;
+    return _returnValue;
+}
+Std_ReturnType Rte_SwcLceComManager_BufferDecorator:: Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS (IComLight_Ctrl_Inputs_CTR_FN_POS_Type CTR_FN_POS)
+{
+    Std_ReturnType _returnValue = _component->Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS(CTR_FN_POS);
+    // save to buffer ...
+     _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_Buf = CTR_FN_POS;
+     _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS_ReturnValue = _returnValue;
+    return _returnValue;
+}
+Std_ReturnType Rte_SwcLceComManager_BufferDecorator:: Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR (IComLight_Ctrl_Inputs_CTR_FN_PAR_Type CTR_FN_PAR)
+{
+    Std_ReturnType _returnValue = _component->Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR(CTR_FN_PAR);
+    // save to buffer ...
+     _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_Buf = CTR_FN_PAR;
+     _Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR_ReturnValue = _returnValue;
     return _returnValue;
 }
 Std_ReturnType Rte_SwcLceComManager_BufferDecorator:: Rte_Read_SwcLceComManager_comLight_Ctrl_Inputs_ST_LP_LIN (IComLight_Ctrl_Inputs_ST_LP_LIN_Type* ST_LP_LIN)

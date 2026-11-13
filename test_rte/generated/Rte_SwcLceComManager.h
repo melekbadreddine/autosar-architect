@@ -77,6 +77,42 @@ extern Std_ReturnType Rte_Write_SwcLceComManager_comCTR_EL_F_CTR_FN_PAR(IComLigh
 
 
 /*****************************************************
+ * Port:        comCTR_EL_R
+ * Interface:   IComCTR_EL_R
+ * DataElement: CTR_FN_DR
+ *****************************************************/
+extern Std_ReturnType Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR(IComLight_Ctrl_Inputs_CTR_FN_DR_Type CTR_FN_DR);
+#ifndef IN_RTE_C
+#define Rte_Write_comCTR_EL_R_CTR_FN_DR(RTEData) \
+    Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_DR(RTEData)
+#endif
+
+
+/*****************************************************
+ * Port:        comCTR_EL_R
+ * Interface:   IComCTR_EL_R
+ * DataElement: CTR_FN_POS
+ *****************************************************/
+extern Std_ReturnType Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS(IComLight_Ctrl_Inputs_CTR_FN_POS_Type CTR_FN_POS);
+#ifndef IN_RTE_C
+#define Rte_Write_comCTR_EL_R_CTR_FN_POS(RTEData) \
+    Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_POS(RTEData)
+#endif
+
+
+/*****************************************************
+ * Port:        comCTR_EL_R
+ * Interface:   IComCTR_EL_R
+ * DataElement: CTR_FN_PAR
+ *****************************************************/
+extern Std_ReturnType Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR(IComLight_Ctrl_Inputs_CTR_FN_PAR_Type CTR_FN_PAR);
+#ifndef IN_RTE_C
+#define Rte_Write_comCTR_EL_R_CTR_FN_PAR(RTEData) \
+    Rte_Write_SwcLceComManager_comCTR_EL_R_CTR_FN_PAR(RTEData)
+#endif
+
+
+/*****************************************************
  * Port:        comLight_Ctrl_Inputs
  * Interface:   IComLight_Ctrl_Inputs
  * DataElement: ST_LP_LIN
