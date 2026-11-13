@@ -4,3 +4,7 @@ build-*/
 
 # ArUnit headless runtime artifacts (regenerated on each run)
 bceutil/Scripts/ArUnit/configuration/*.log
+# Equinox OSGi runtime state: rebuilt automatically on every generation
+bceutil/Scripts/ArUnit/configuration/org.eclipse.osgi/.manager/
+bceutil/Scripts/ArUnit/configuration/org.eclipse.osgi/framework.info.*
+bceutil/Scripts/ArUnit/configuration/org.eclipse.osgi/*/
