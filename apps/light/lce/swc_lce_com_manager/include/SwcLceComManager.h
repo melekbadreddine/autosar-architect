@@ -8,6 +8,8 @@
  * @author Abderrahmen Hammami
  *****************************************************************************/
 
+#include "Rte_Type.h"
+
 namespace lce
 {
 	namespace lceComManager
@@ -21,6 +23,8 @@ namespace lce
 		public:
 			IComBrightness_Rain_Sensor_ST_RB_LIN_Type stRbLin;
 			IComLight_Ctrl_Inputs_ST_LP_LIN_Type stLpLin;
+			IComCar_State_VEH_ST_Type vehSt;
+			IComMotor_Speed_Motor_Speed_Type motorSpeed;
 			IComLight_Ctrl_Inputs_CTR_FN_DR_Type ctrFnDr;
 			IComLight_Ctrl_Inputs_CTR_FN_PAR_Type ctrFnPar;
 			IComLight_Ctrl_Inputs_CTR_FN_POS_Type ctrFnPos;

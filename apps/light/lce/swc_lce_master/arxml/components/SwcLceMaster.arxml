@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://autosar.org/schema/r4.0">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>primatec</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>light</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>lceMaster</SHORT-NAME>
+              <ELEMENTS>
+                <APPLICATION-SW-COMPONENT-TYPE>
+                  <SHORT-NAME>SwcLceMaster</SHORT-NAME>
+                  <PORTS>
+                    <R-PORT-PROTOTYPE>
+                      <SHORT-NAME>comCTR_EL_F</SHORT-NAME>
+                      <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Default/IComCTR_EL_F</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+
+                    <R-PORT-PROTOTYPE>
+                      <SHORT-NAME>comCTR_EL_R</SHORT-NAME>
+                      <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Default/IComCTR_EL_R</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+
+                  </PORTS>
+                  <INTERNAL-BEHAVIORS>
+                    <SWC-INTERNAL-BEHAVIOR>
+                      <SHORT-NAME>SwcLceMaster_DefaultBehavior</SHORT-NAME>
+                      <EVENTS>
+                        <TIMING-EVENT>
+                          <SHORT-NAME>periodRunnable_LceMaster10ms</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/primatec/light/lceMaster/SwcLceMaster/SwcLceMaster_DefaultBehavior/RTERunnable_SwcLceMaster_RunMaster_10msTask</START-ON-EVENT-REF>
+                          <PERIOD>0.01</PERIOD>
+                        </TIMING-EVENT>
+
+                      </EVENTS>
+                      <!--HANDLE-TERMINATION-AND-RESTART>CAN-BE-TERMINATED-AND-RESTARTED</HANDLE-TERMINATION-AND-RESTART-->
+                      <RUNNABLES>
+                        <RUNNABLE-ENTITY>
+                          <SHORT-NAME>RTERunnable_SwcLceMaster_Init</SHORT-NAME>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>RTERunnable_SwcLceMaster_Init</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY>
+                          <SHORT-NAME>RTERunnable_SwcLceMaster_RunMaster_10msTask</SHORT-NAME>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                            <VARIABLE-ACCESS>
+                              <SHORT-NAME>DRPA_comCTR_EL_F_CTR_FN_DR</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/primatec/light/lceMaster/SwcLceMaster/comCTR_EL_F</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Default/IComCTR_EL_F/CTR_FN_DR</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS>
+                              <SHORT-NAME>DRPA_comCTR_EL_F_CTR_FN_POS</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/primatec/light/lceMaster/SwcLceMaster/comCTR_EL_F</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Default/IComCTR_EL_F/CTR_FN_POS</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS>
+                              <SHORT-NAME>DRPA_comCTR_EL_F_CTR_FN_PAR</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/primatec/light/lceMaster/SwcLceMaster/comCTR_EL_F</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Default/IComCTR_EL_F/CTR_FN_PAR</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+
+                            <VARIABLE-ACCESS>
+                              <SHORT-NAME>DRPA_comCTR_EL_R_CTR_FN_DR</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/primatec/light/lceMaster/SwcLceMaster/comCTR_EL_R</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Default/IComCTR_EL_R/CTR_FN_DR</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS>
+                              <SHORT-NAME>DRPA_comCTR_EL_R_CTR_FN_POS</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/primatec/light/lceMaster/SwcLceMaster/comCTR_EL_R</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Default/IComCTR_EL_R/CTR_FN_POS</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS>
+                              <SHORT-NAME>DRPA_comCTR_EL_R_CTR_FN_PAR</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/primatec/light/lceMaster/SwcLceMaster/comCTR_EL_R</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Default/IComCTR_EL_R/CTR_FN_PAR</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+
+                          </DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                          <SYMBOL>RTERunnable_SwcLceMaster_RunMaster_10msTask</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                      </RUNNABLES>
+                    <!--SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION-->
+                    </SWC-INTERNAL-BEHAVIOR>
+                  </INTERNAL-BEHAVIORS>
+                </APPLICATION-SW-COMPONENT-TYPE>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

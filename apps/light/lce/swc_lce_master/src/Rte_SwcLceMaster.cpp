@@ -21,7 +21,7 @@ extern "C"
 	}
 
 
-	void RTERunnable_SwcLceMaster_RunComMngr_10msTask()
+	void RTERunnable_SwcLceMaster_RunMaster_10msTask()
 	{
 		SwcLceMaster::getInstance().run10ms();
 	}

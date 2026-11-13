@@ -12,14 +12,10 @@
               <SHORT-NAME>CTR_FN_DR</SHORT-NAME>
               <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Default/IComLight_Ctrl_Inputs_CTR_FN_DR_Type</TYPE-TREF>
             </VARIABLE-DATA-PROTOTYPE>
-          </DATA-ELEMENTS>
-		  <DATA-ELEMENTS>
             <VARIABLE-DATA-PROTOTYPE>
               <SHORT-NAME>CTR_FN_POS</SHORT-NAME>
               <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Default/IComLight_Ctrl_Inputs_CTR_FN_POS_Type</TYPE-TREF>
             </VARIABLE-DATA-PROTOTYPE>
-          </DATA-ELEMENTS>
-		  <DATA-ELEMENTS>
             <VARIABLE-DATA-PROTOTYPE>
               <SHORT-NAME>CTR_FN_PAR</SHORT-NAME>
               <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Default/IComLight_Ctrl_Inputs_CTR_FN_PAR_Type</TYPE-TREF>

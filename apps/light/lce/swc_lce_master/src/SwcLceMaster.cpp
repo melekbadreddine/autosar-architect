@@ -39,7 +39,13 @@ namespace lce
 
 		void SwcLceMaster::run10ms()
 		{
-
+			// develop code of this function: read the control signals produced by SwcLceComManager
+			Rte_Read_SwcLceMaster_comCTR_EL_F_CTR_FN_DR(&ctrFnDrF);
+			Rte_Read_SwcLceMaster_comCTR_EL_F_CTR_FN_POS(&ctrFnPosF);
+			Rte_Read_SwcLceMaster_comCTR_EL_F_CTR_FN_PAR(&ctrFnParF);
+			Rte_Read_SwcLceMaster_comCTR_EL_R_CTR_FN_DR(&ctrFnDrR);
+			Rte_Read_SwcLceMaster_comCTR_EL_R_CTR_FN_POS(&ctrFnPosR);
+			Rte_Read_SwcLceMaster_comCTR_EL_R_CTR_FN_PAR(&ctrFnParR);
 		}
 	}
 }
