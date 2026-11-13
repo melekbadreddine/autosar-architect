@@ -1,0 +1,26 @@
+[settings]
+    arch_build=x86_64
+    os_build=Windows
+
+[requires]
+    Java/8.Y.Z
+
+[options]
+    add_to_path=False
+
+[full_settings]
+    arch_build=x86_64
+    os_build=Windows
+
+[full_requires]
+    Java/8.0.192@bcp-auto-tools/stable:b93856a31b5107e5d1fe175bb981bed4062b2cd2
+
+[full_options]
+    add_to_path=False
+    Java:add_to_path=True
+
+[recipe_hash]
+    909efa8df2c4b687cc793cefd532ef42
+
+[env]
+

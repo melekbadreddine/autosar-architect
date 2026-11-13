@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ <copyright>
+ 
+ Copyright (c) BMW Car IT and others.
+ All rights reserved. This program and the accompanying materials are made
+ available under the terms of the Artop Software License Based on Released
+ AUTOSAR Material (ASLR) which accompanies this distribution, and is available
+ at http://www.artop.org/aslr.html
+ 
+ Contributors: 
+     BMW Car IT - initial API and implementation
+ 
+ </copyright>
+-->
+<feature
+      id="org.artop.arunit.headless.launcher"
+      label="%featureName"
+      version="0.11.9.202102121433"
+      provider-name="%providerName">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="org.artop.arunit.headless"
+         download-size="49"
+         install-size="122"
+         version="0.11.9.202102121433"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.equinox.launcher"
+         download-size="49"
+         install-size="87"
+         version="1.3.0.v20140415-2008"
+         unpack="false"/>
+
+   <plugin
+         id="org.artop.arunit.gmock.generator"
+         download-size="263"
+         install-size="867"
+         version="0.11.9.202102121433"
+         unpack="false"/>
+
+   <plugin
+         id="de.bmw.arunit.cs.generator"
+         download-size="65"
+         install-size="225"
+         version="0.11.9.202102121433"
+         unpack="false"/>
+
+   <plugin
+         id="de.bmw.arunit.gmock.decorators"
+         download-size="506"
+         install-size="1560"
+         version="0.11.9.202102121433"
+         unpack="false"/>
+
+   <plugin
+         id="de.bmw.arunit.tcf"
+         download-size="103"
+         install-size="324"
+         version="0.11.9.202102121433"
+         unpack="false"/>
+
+   <plugin
+         id="de.bmw.arunit.gmock.virtual"
+         download-size="49"
+         install-size="136"
+         version="0.11.9.202102121433"
+         unpack="false"/>
+         
+   <plugin
+         id="de.bmw.vbf.arunit.coding"
+         download-size="192"
+         install-size="560"
+         version="0.11.9.202102121433"
+         unpack="false"/>
+
+   <plugin
+         id="de.bmw.vbf.arunit.config"
+         download-size="50"
+         install-size="146"
+         version="0.11.9.202102121433"
+         unpack="false"/>
+
+   <plugin
+         id="de.bmw.vbf.arunit.decorator"
+         download-size="22"
+         install-size="58"
+         version="0.11.9.202102121433"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.equinox.p2.artifact.repository"
+         download-size="132"
+         install-size="290"
+         version="1.1.300.v20131211-1531"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.equinox.p2.core"
+         download-size="69"
+         install-size="128"
+         version="2.3.0.v20131211-1531"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.equinox.p2.director"
+         download-size="100"
+         install-size="230"
+         version="2.3.100.v20140224-1921"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.equinox.p2.director.app"
+         download-size="51"
+         install-size="97"
+         version="1.0.300.v20150129-0838"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.equinox.p2.engine"
+         download-size="199"
+         install-size="447"
+         version="2.3.0.v20140506-1720"
+         unpack="false"/>
+
+   <!--<plugin
+         id="org.eclipse.equinox.p2.installer"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>-->
+
+   <plugin
+         id="org.eclipse.equinox.p2.metadata"
+         download-size="329"
+         install-size="740"
+         version="2.2.0.v20131211-1531"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.equinox.p2.metadata.repository"
+         download-size="113"
+         install-size="251"
+         version="1.2.100.v20131209-2144"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.equinox.p2.operations"
+         download-size="73"
+         install-size="171"
+         version="2.4.0.v20131119-0908"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.equinox.p2.publisher"
+         download-size="106"
+         install-size="250"
+         version="1.3.0.v20140911-0143"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.equinox.p2.publisher.eclipse"
+         download-size="209"
+         install-size="442"
+         version="1.1.200.v20140414-0825"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.equinox.p2.repository"
+         download-size="126"
+         install-size="257"
+         version="2.3.0.v20131211-1531"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.equinox.p2.repository.tools"
+         download-size="229"
+         install-size="478"
+         version="2.1.0.v20131211-1531"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.equinox.p2.touchpoint.eclipse"
+         download-size="124"
+         install-size="273"
+         version="2.1.200.v20140512-1650"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.equinox.ds"
+         download-size="190"
+         install-size="392"
+         version="1.4.200.v20131126-2331"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.equinox.p2.touchpoint.natives"
+         download-size="52"
+         install-size="104"
+         version="1.1.100.v20140523-0116"
+         unpack="false"/>
+
+</feature>

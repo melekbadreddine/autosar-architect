@@ -1,0 +1,1171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+  <ADMIN-DATA />
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>ZSG</SHORT-NAME>
+      <LONG-NAME />
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="f6a8032d-1090-4c63-8e2f-f9c9367bdc4d">
+          <SHORT-NAME>DataTypes</SHORT-NAME>
+          <LONG-NAME />
+          <ELEMENTS>
+            <IMPLEMENTATION-DATA-TYPE UUID="7c007504-aaa0-3601-b167-68f83b22e146">
+              <SHORT-NAME>UcArray8</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="d6d27816-3d2d-3338-9010-25b759db2f5e">
+                  <SHORT-NAME>UcArray8_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>8</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="01aa0b87-28bd-3b5b-ae90-68c0838b21b5">
+              <SHORT-NAME>Array8</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="22d44d02-1ac0-386a-a9c6-2d7082408c88">
+                  <SHORT-NAME>Array8_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>8</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="998c383e-e32b-3c7c-9981-0e7b949c75d7">
+              <SHORT-NAME>ByteArray8</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="d7ac92bd-c3c0-3d6d-9f8c-8fd5fdae796c">
+                  <SHORT-NAME>ByteArray8_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>8</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="b0213def-9d20-363e-b1ad-a10eb4f27ecf">
+              <SHORT-NAME>ByteArray1</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="c3263c6c-9d05-360b-b031-2639d8c22e7e">
+                  <SHORT-NAME>ByteArray1_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>1</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="1039175a-1831-3fc5-a9c4-8d9e915788d2">
+              <SHORT-NAME>ByteArray2</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="6db8e030-679a-3836-80cb-0c063264967b">
+                  <SHORT-NAME>ByteArray2_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>2</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="546343f5-fdb7-3c2d-86cc-3b9a95b2533e">
+              <SHORT-NAME>ByteArray3</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="797ec11d-646b-3f18-a70c-938a37dd796e">
+                  <SHORT-NAME>ByteArray3_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>3</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="5d712bc8-86fd-3bb9-8d40-0ed172132e84">
+              <SHORT-NAME>ByteArray5</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="2d3292c5-206b-3fbe-9d00-93c4642e4d0d">
+                  <SHORT-NAME>ByteArray5_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>5</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="4fa3aab7-9100-311b-95f5-4c59a897d9b4">
+              <SHORT-NAME>ByteArray6</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="32370334-62d2-3d63-b2c2-eb55c558ded2">
+                  <SHORT-NAME>ByteArray6_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>6</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="b51e7fdd-fa0d-3536-bba6-fcdc40a0e7ec">
+              <SHORT-NAME>ByteArray7</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="7455fb1d-7a84-36eb-9a26-9ca9ccbf36a3">
+                  <SHORT-NAME>ByteArray7_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>7</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="bab9f8eb-8dc7-411b-9e79-d4d0d44e762e">
+              <SHORT-NAME>UcArray16</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="c9a87129-a8e8-4fb5-8a30-c43a178acf77">
+                  <SHORT-NAME>UcArray16_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>16</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="0cfb5ce6-28fd-4238-9e65-62e518436b6e">
+              <SHORT-NAME>UlArray80</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="26cf7aeb-7f7c-4a4b-a311-1c2262e39124">
+                  <SHORT-NAME>UlArray80_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>80</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt32</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="e2572a61-ea5b-4ed5-b407-c631dc9b941e">
+              <SHORT-NAME>ByteArray128</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="e0043459-b094-484c-8480-16b97eabee02">
+                  <SHORT-NAME>ByteArray128_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>128</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="06aaf6b7-bea7-42af-b93a-fd7451c26e71">
+              <SHORT-NAME>ByteArray132</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="f10a864b-1074-44a7-a278-c23032ababe1">
+                  <SHORT-NAME>ByteArray132_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>132</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="c86a3a74-c9fa-4573-bf88-5ab4349a79e3">
+              <SHORT-NAME>ByteArray20</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="702140d6-c8ba-4082-b29d-670eae3e8e3b">
+                  <SHORT-NAME>ByteArray20_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>20</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="297bed8b-9a2c-446f-aa97-f2f2299e9bee">
+              <SHORT-NAME>ByteArray26</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="53034879-3309-4649-a2f2-0038f8c0d3b8">
+                  <SHORT-NAME>ByteArray26_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>26</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="26c86e1a-2259-4649-aa09-279078822a53">
+              <SHORT-NAME>ByteArray4</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="bd8f82e1-d7c1-4cb5-9bca-e744ca74d99f">
+                  <SHORT-NAME>ByteArray4_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>4</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="c972a2a2-f2d9-43c0-899c-6dc1846776ce">
+              <SHORT-NAME>ByteArray72</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="f2cbd33f-5ef7-426a-a808-e0570a412273">
+                  <SHORT-NAME>ByteArray72_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>72</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="1602ce19-a829-4fa6-a580-18a177ff02cf">
+              <SHORT-NAME>ByteArray19</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="c8823a51-89d8-4269-a933-87a690ba682c">
+                  <SHORT-NAME>ByteArray19_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>19</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="1e050359-354b-44eb-b8d5-ea8ab09a2103">
+              <SHORT-NAME>ByteArray9</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="0d00c23f-7332-4ea1-87d1-014fe9586cb7">
+                  <SHORT-NAME>ByteArray9_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>9</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="46df117b-946d-4ac2-a487-674fcd11bbaa">
+              <SHORT-NAME>ByteArray64</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="5e947971-ff24-4d73-aa40-582a9d9cd39f">
+                  <SHORT-NAME>ByteArray64_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>64</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE>
+              <SHORT-NAME>ByteArray65</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                  <SHORT-NAME>ByteArray65_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>65</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="d0f0f746-316a-451f-abc5-c7fc9b7ba230">
+              <SHORT-NAME>ByteArray264</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="cfa31140-0762-4dd9-ac2b-2a1626739c73">
+                  <SHORT-NAME>ByteArray264_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>264</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE>
+              <SHORT-NAME>ByteArray40</SHORT-NAME>
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                  <SHORT-NAME>ByteArray40_elements</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>40</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE>
+              <SHORT-NAME>ByteArray42</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                  <SHORT-NAME>ByteArray42_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>42</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE>
+              <SHORT-NAME>ByteArray50</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                  <SHORT-NAME>ByteArray50_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>50</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE>
+              <SHORT-NAME>ByteArray60</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                  <SHORT-NAME>ByteArray60_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>60</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE>
+              <SHORT-NAME>ByteArray146</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                  <SHORT-NAME>ByteArray146_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>146</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="dc462833-5d5d-471f-9925-cfaf3b15cd1f">
+              <SHORT-NAME>UcArray3</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="e2f63b23-ca9f-4a8a-817d-ba832f4e4547">
+                  <SHORT-NAME>UcArray3_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>3</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="9a389032-6786-4528-ad69-635dc1086710">
+              <SHORT-NAME>CArray8</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="5ca3f5b1-c5ff-4c04-8d8d-79faf6b006d5">
+                  <SHORT-NAME>CArray8_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>8</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/SInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="a5cf7f44-a34a-417b-88f5-d5771b97a4ec">
+              <SHORT-NAME>UcArray2</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="61866ddf-9162-4d79-bd89-b4b1903cd036">
+                  <SHORT-NAME>UcArray2_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>2</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="3f5cfaec-318a-4617-9b61-38b6d79b4dad">
+              <SHORT-NAME>UcArray4</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="82e617fb-fff3-412f-bf94-18355753be32">
+                  <SHORT-NAME>UcArray4_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>4</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="e5df6c58-eba2-48aa-8bc6-03754076c7ed">
+              <SHORT-NAME>CArray3</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="e9daa550-046b-4ff7-9134-01d95110ad82">
+                  <SHORT-NAME>CArray3_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>3</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/SInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="385ab674-5370-4ae0-824f-422f8a5ea4fc">
+              <SHORT-NAME>ByteArray32</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="6244996a-b980-4b40-9bb7-761ed04918eb">
+                  <SHORT-NAME>ByteArray32_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>32</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="0ad578d5-901a-4bab-b21a-1047847d1e44">
+              <SHORT-NAME>ByteArray112</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="03bd33f6-cd70-4b2d-90d8-87dfaeb6169c">
+                  <SHORT-NAME>ByteArray112_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>112</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="a6e26231-b7d2-495c-840d-682aeb1b3390">
+              <SHORT-NAME>ByteArray82</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="0f61f617-1017-4b51-9be2-9404254817ff">
+                  <SHORT-NAME>ByteArray82_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>82</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="ff7e794d-a0d5-48ba-ba42-65ffe544f773">
+              <SHORT-NAME>ByteArray12</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="19a8925c-22e1-4ac7-bfe4-4e81c1e3b66b">
+                  <SHORT-NAME>ByteArray12_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>12</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="ba638390-3830-4b4d-bab0-989aa964335e">
+              <SHORT-NAME>ByteArray48</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="78a0bf69-2e5a-41f8-89bf-f2a845016414">
+                  <SHORT-NAME>ByteArray48_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>48</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="cddd4c29-1372-4d5d-be5e-e61fa67f9597">
+              <SHORT-NAME>SIArray1</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="e8f564c5-6277-4764-8b8b-e5535de38811">
+                  <SHORT-NAME>SIArray1_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>1</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt16</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="a9c3c85d-9282-4c8a-89cb-c8a254def7b7">
+              <SHORT-NAME>ByteArray10</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="5669ed79-1ce3-443f-90cb-fa11409368d1">
+                  <SHORT-NAME>ByteArray10_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>10</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="ce80da37-9007-4f4f-bc10-47190df395a1">
+              <SHORT-NAME>ByteArray16</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="e992f971-0ce7-45db-81bb-ffeb22bb9325">
+                  <SHORT-NAME>ByteArray16_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>16</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="ce80da37-9007-4f4f-bc10-47190df395a2">
+              <SHORT-NAME>ByteArray17</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="e992f971-0ce7-45db-81bb-ffeb22bb9326">
+                  <SHORT-NAME>ByteArray17_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>17</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="d957b1cb-d3ea-4e5a-829c-7956d14e2499">
+              <SHORT-NAME>ByteArray25</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="ede8f7b0-164d-45f9-b851-2d99d7eb7d7a">
+                  <SHORT-NAME>ByteArray25_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>25</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE>
+              <SHORT-NAME>ByteArray34</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                  <SHORT-NAME>ByteArray34_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>34</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="4068a078-c5ea-45a9-bfbd-e303e2422147">
+              <SHORT-NAME>SIArray25</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="72d4ee5d-47a4-4d63-ade9-ffd10f170e7f">
+                  <SHORT-NAME>SIArray25_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>25</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt16</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="98ecda60-c6dd-4fec-9527-7098c78b4fd9">
+              <SHORT-NAME>ByteArray14</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="1ee569bc-13d3-4454-abed-39dc4a82f05a">
+                  <SHORT-NAME>ByteArray14_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>14</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="c4e6da8f-39c9-4edb-9814-d690c6aaa746">
+              <SHORT-NAME>ByteArray100</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="549d53c8-6d7a-490a-953d-f023dac92fa1">
+                  <SHORT-NAME>ByteArray100_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>100</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="8375e390-57d5-4fe5-a986-88fcd13cee14">
+              <SHORT-NAME>ByteArray21</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="89eabee0-f772-43cc-bf82-07c4cb86c2bb">
+                  <SHORT-NAME>ByteArray21_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>21</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="b71de594-6f6b-48c3-9283-32ff6519ca5b">
+              <SHORT-NAME>UlArray5</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="3054a138-2794-4ae0-830a-60166211b2ef">
+                  <SHORT-NAME>UlArray5_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>5</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt32</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="effcc1fa-d00b-4ff7-85e3-56ff81f53f43">
+              <SHORT-NAME>ByteArray92</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="1b68bbef-0ef0-4923-a44f-34c04d9889c6">
+                  <SHORT-NAME>ByteArray92_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>92</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="d9592375-37ca-4f4a-9cb9-759e330cdb94">
+              <SHORT-NAME>ByteArray24</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="7759acef-0ae9-4cd7-ac10-25a16427cfa1">
+                  <SHORT-NAME>ByteArray24_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>24</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="d9592371-37ca-4f4a-9cb9-759e330cdb94">
+              <SHORT-NAME>ByteArray129</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="b5fae95c-0653-403b-b878-1a18769bd3ff">
+                  <SHORT-NAME>ByteArray129_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>129</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="d9592371-37ca-4f4a-9cb3-759e330cdb94">
+              <SHORT-NAME>ByteArray11</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="b7e9aac8-3f1a-4939-9872-8320340d014d">
+                  <SHORT-NAME>ByteArray11_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>11</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="ECUC:cd16dbec-fef9-5705-8df3-32b7b900f439">
+              <SHORT-NAME>ByteArray516</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="b7e9aac8-3f1a-4939-9872-8320340d014d">
+                  <SHORT-NAME>ByteArray516_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>516</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="ECUC:cd16dbec-fef9-5705-8df3-32b7b900f439">
+              <SHORT-NAME>ByteArray124</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="b7e9aac8-3f1a-4939-9872-8320340d014d">
+                  <SHORT-NAME>ByteArray124_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>124</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE>
+              <SHORT-NAME>ByteArray13</SHORT-NAME>
+              <LONG-NAME />
+              <CATEGORY>ARRAY</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                  <SHORT-NAME>ByteArray13_elements</SHORT-NAME>
+                  <LONG-NAME />
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <ARRAY-SIZE>13</ARRAY-SIZE>
+                  <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

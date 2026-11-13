@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config date="1613140519720" transient="false">
+	<site updateable="true" url="platform:/base/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="org.artop.arunit.headless.launcher" version="0.11.9.202102121433" url="features/org.artop.arunit.headless.launcher_0.11.9.202102121433/">
+		</feature>
+	</site>
+</config>

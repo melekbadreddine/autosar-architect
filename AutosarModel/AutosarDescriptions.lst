@@ -1,0 +1,9 @@
+..\..\apps\light\lce\swc_lce_com_manager\arxml\interfaces\IComBrightnessRainSensor.arxml
+..\..\apps\light\lce\swc_lce_com_manager\arxml\interfaces\IComCTR_EL_F.arxml
+..\..\apps\light\lce\swc_lce_com_manager\arxml\interfaces\IComLight_Ctrl_Inputs.arxml
+..\..\apps\light\lce\swc_lce_com_manager\arxml\components\SwcLceComManager.arxml
+..\Ar4Spec\AUTOSAR_PlatformTypes.arxml
+..\Ar4Spec\BCE_VbfStdTypes.arxml
+..\Autosar\BCECommonTypes.arxml
+..\..\apps\light\lce\swc_lce_com_manager\arxml\interfaces\IComMotor_Speed.arxml
+..\..\apps\light\lce\swc_lce_com_manager\arxml\interfaces\IComCar_State.arxml

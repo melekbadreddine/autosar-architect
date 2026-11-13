@@ -1,0 +1,10 @@
+set(
+    SwcLceMaster_headerFiles
+    ${PROJECT_SOURCE_DIR}/apps/light/lce/swc_lce_master/include/SwcLceMaster.h
+   )
+	
+set(
+    SwcLceMaster_sourceFiles
+    ${PROJECT_SOURCE_DIR}/apps/light/lce/swc_lce_master/src/Rte_SwcLceMaster.cpp
+    ${PROJECT_SOURCE_DIR}/apps/light/lce/swc_lce_master/src/SwcLceMaster.cpp
+   )

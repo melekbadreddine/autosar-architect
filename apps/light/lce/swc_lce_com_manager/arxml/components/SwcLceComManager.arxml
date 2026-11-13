@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://autosar.org/schema/r4.0">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>primatec</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>light</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>lceComManager</SHORT-NAME>
+              <ELEMENTS>
+                <APPLICATION-SW-COMPONENT-TYPE>
+                  <SHORT-NAME>SwcLceComManager</SHORT-NAME>
+                  <PORTS>
+                    <P-PORT-PROTOTYPE>
+                      <SHORT-NAME>comCTR_EL_F</SHORT-NAME>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Default/IComCTR_EL_F</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+
+ 
+                    <P-PORT-PROTOTYPE>
+                      <SHORT-NAME>comCTR_EL_R</SHORT-NAME>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Default/IComCTR_EL_R</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+
+
+                    <R-PORT-PROTOTYPE>
+                      <SHORT-NAME>comLight_Ctrl_Inputs</SHORT-NAME>
+                      <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Default/IComLight_Ctrl_Inputs</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    
+					          <R-PORT-PROTOTYPE>
+                                <SHORT-NAME>comBrightness_Rain_Sensor</SHORT-NAME>
+                                <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Default/IComBrightness_Rain_Sensor</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+					          
+                    <R-PORT-PROTOTYPE>
+                      <SHORT-NAME>comCar_State</SHORT-NAME>
+                      <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Default/IComCar_State</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+				          
+                    <R-PORT-PROTOTYPE>
+                      <SHORT-NAME>comMotor_Speed</SHORT-NAME>
+                      <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Default/IComMotor_Speed</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    
+                  </PORTS>
+                  <INTERNAL-BEHAVIORS>
+                    <SWC-INTERNAL-BEHAVIOR>
+                      <SHORT-NAME>SwcLceComManager_DefaultBehavior</SHORT-NAME>
+                      <EVENTS>
+                        <TIMING-EVENT>
+                          <SHORT-NAME>periodRunnable_LceComManager10ms</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/primatec/light/lceComManager/SwcLceComManager/SwcLceComManager_DefaultBehavior/RTERunnable_SwcLceComManager_RunComMngr_10msTask</START-ON-EVENT-REF>
+                          <PERIOD>0.01</PERIOD>
+                        </TIMING-EVENT>            
+                        
+                      </EVENTS>
+                      <!--HANDLE-TERMINATION-AND-RESTART>CAN-BE-TERMINATED-AND-RESTARTED</HANDLE-TERMINATION-AND-RESTART-->
+                      <RUNNABLES>
+                        <RUNNABLE-ENTITY>
+                          <SHORT-NAME>RTERunnable_LceSwcComManager_Init</SHORT-NAME>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>RTERunnable_SwcLceComManager_Init</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY>
+                          <SHORT-NAME>RTERunnable_SwcLceComManager_RunComMngr_10msTask</SHORT-NAME>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                            <VARIABLE-ACCESS>
+                              <SHORT-NAME>DRPA_comLight_Ctrl_Inputs_ST_LP_LIN</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/primatec/light/lceComManager/SwcLceComManager/comLight_Ctrl_Inputs</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Default/IComLight_Ctrl_Inputs/ST_LP_LIN</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+							              <VARIABLE-ACCESS>
+                              <SHORT-NAME>DRPA_comBrightness_Rain_Sensor_ST_RB_LIN</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/primatec/light/lceComManager/SwcLceComManager/comBrightness_Rain_Sensor</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Default/IComBrightness_Rain_Sensor/ST_RB_LIN</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+
+                            <VARIABLE-ACCESS>
+                              <SHORT-NAME>DRPA_comCar_State_VEH_ST</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/primatec/light/lceComManager/SwcLceComManager/comCar_State</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Default/IComCar_State/VEH_ST</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+
+							              <VARIABLE-ACCESS>
+                              <SHORT-NAME>DRPA_comMotor_Speed_Motor_Speed</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/primatec/light/lceComManager/SwcLceComManager/comMotor_Speed</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Default/IComMotor_Speed/Motor_Speed</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+
+                          </DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                          <DATA-SEND-POINTS>
+                            
+                            <VARIABLE-ACCESS>
+                              <SHORT-NAME>DRPA_comCTR_EL_F_CTR_FN_DR</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/primatec/light/lceComManager/SwcLceComManager/comCTR_EL_F</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Default/IComCTR_EL_F/CTR_FN_DR</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+							            <VARIABLE-ACCESS>
+                              <SHORT-NAME>DRPA_comCTR_EL_F_CTR_FN_POS</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/primatec/light/lceComManager/SwcLceComManager/comCTR_EL_F</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Default/IComCTR_EL_F/CTR_FN_POS</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+							              <VARIABLE-ACCESS>
+                              <SHORT-NAME>DRPA_comCTR_EL_F_CTR_FN_PAR</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/primatec/light/lceComManager/SwcLceComManager/comCTR_EL_F</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Default/IComCTR_EL_F/CTR_FN_PAR</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+
+                            <VARIABLE-ACCESS>
+                              <SHORT-NAME>DRPA_comCTR_EL_R_CTR_FN_DR</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/primatec/light/lceComManager/SwcLceComManager/comCTR_EL_R</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Default/IComCTR_EL_R/CTR_FN_DR</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+							              <VARIABLE-ACCESS>
+                              <SHORT-NAME>DRPA_comCTR_EL_R_CTR_FN_POS</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/primatec/light/lceComManager/SwcLceComManager/comCTR_EL_R</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Default/IComCTR_EL_R/CTR_FN_POS</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+							              <VARIABLE-ACCESS>
+                              <SHORT-NAME>DRPA_comCTR_EL_R_CTR_FN_PAR</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/primatec/light/lceComManager/SwcLceComManager/comCTR_EL_R</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Default/IComCTR_EL_R/CTR_FN_PAR</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+
+                          </DATA-SEND-POINTS>
+                          <SYMBOL>RTERunnable_SwcLceComManager_RunComMngr_10msTask</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                      </RUNNABLES>
+                    <!--SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION-->
+                    </SWC-INTERNAL-BEHAVIOR>
+                  </INTERNAL-BEHAVIORS>
+                </APPLICATION-SW-COMPONENT-TYPE>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

@@ -1,0 +1,60 @@
+add_library(
+    lib_gtest STATIC
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googletest/include/gtest/gtest-death-test.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googletest/include/gtest/gtest-message.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googletest/include/gtest/gtest-param-test.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googletest/include/gtest/gtest-printers.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googletest/include/gtest/gtest-spi.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googletest/include/gtest/gtest-test-part.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googletest/include/gtest/gtest-typed-test.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googletest/include/gtest/gtest.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googletest/include/gtest/gtest_pred_impl.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googletest/include/gtest/gtest_prod.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googletest/include/gtest/internal/gtest-death-test-internal.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googletest/include/gtest/internal/gtest-filepath.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googletest/include/gtest/internal/gtest-internal.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googletest/include/gtest/internal/gtest-linked_ptr.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googletest/include/gtest/internal/gtest-param-util-generated.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googletest/include/gtest/internal/gtest-param-util.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googletest/include/gtest/internal/gtest-port-arch.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googletest/include/gtest/internal/gtest-port.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googletest/include/gtest/internal/gtest-string.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googletest/include/gtest/internal/gtest-tuple.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googletest/include/gtest/internal/gtest-type-util.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googletest/include/gtest/internal/custom/gtest-port.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googletest/include/gtest/internal/custom/gtest-printers.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googletest/include/gtest/internal/custom/gtest.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googletest/src/gtest-internal-inl.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googlemock/include/gmock/gmock-actions.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googlemock/include/gmock/gmock-cardinalities.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googlemock/include/gmock/gmock-generated-actions.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googlemock/include/gmock/gmock-generated-function-mockers.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googlemock/include/gmock/gmock-generated-matchers.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googlemock/include/gmock/gmock-generated-nice-strict.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googlemock/include/gmock/gmock-matchers.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googlemock/include/gmock/gmock-more-actions.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googlemock/include/gmock/gmock-more-matchers.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googlemock/include/gmock/gmock-spec-builders.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googlemock/include/gmock/gmock.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googlemock/include/gmock/internal/gmock-generated-internal-utils.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googlemock/include/gmock/internal/gmock-internal-utils.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googlemock/include/gmock/internal/gmock-port.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googlemock/include/gmock/internal/custom/gmock-generated-actions.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googlemock/include/gmock/internal/custom/gmock-matchers.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googlemock/include/gmock/internal/custom/gmock-port.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googletest/src/gtest-all.cc
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googlemock/src/gmock-all.cc
+)
+target_include_directories(
+    lib_gtest PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googletest
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googlemock
+)
+target_include_directories(
+    lib_gtest PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googletest/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/gtest/googlemock/include
+)
+if (CMAKE_CXX_COMPILER_ID STREQUAL MSVC)
+    target_compile_definitions(lib_gtest PUBLIC -D_VARIADIC_MAX=10)
+endif()

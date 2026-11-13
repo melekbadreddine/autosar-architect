@@ -1,0 +1,3329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>BMW</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>Vbf</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>Units</SHORT-NAME>
+              <ELEMENTS>
+                <UNIT>
+                  <SHORT-NAME>percent</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">a percentage is a way of expressing a number as a fraction of 100 (no SI unit).</L-2>
+                  </DESC>
+                  <DISPLAY-NAME>%</DISPLAY-NAME>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>percent_per_second</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">time-derivative of percent</L-2>
+                  </DESC>
+                  <DISPLAY-NAME>%/s</DISPLAY-NAME>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>degree_centigrade</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">temperature, no SI unit, (degC = kelvin - 273.16)</L-2>
+                  </DESC>
+                  <DISPLAY-NAME>degC</DISPLAY-NAME>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>bar</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">pressure, no SI unit; 1 bar = 100,000 pascals (Pa)</L-2>
+                  </DESC>
+                  <DISPLAY-NAME>bar</DISPLAY-NAME>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>hertz</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">SI unit of frequency</L-2>
+                  </DESC>
+                  <DISPLAY-NAME>Hz</DISPLAY-NAME>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>kilogram</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">SI base unit of mass</L-2>
+                  </DESC>
+                  <DISPLAY-NAME>kg</DISPLAY-NAME>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>kilometer</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">length, no SI unit</L-2>
+                  </DESC>
+                  <DISPLAY-NAME>km</DISPLAY-NAME>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>meter</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">SI base unit of length</L-2>
+                  </DESC>
+                  <DISPLAY-NAME>m</DISPLAY-NAME>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>meter_per_second</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">velocity (derived from SI units)</L-2>
+                  </DESC>
+                  <DISPLAY-NAME>m/s</DISPLAY-NAME>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>meter_per_second_squared</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">acceleration (derived from SI units)</L-2>
+                  </DESC>
+                  <DISPLAY-NAME>m/s^2</DISPLAY-NAME>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>newton</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">SI unit of force</L-2>
+                  </DESC>
+                  <DISPLAY-NAME>N</DISPLAY-NAME>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>newton_meter</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">torque (= kg m^2/s^2) ;  (derived from SI units)</L-2>
+                  </DESC>
+                  <DISPLAY-NAME>Nm</DISPLAY-NAME>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>newton_meter_per_second</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">time-derivative of torque</L-2>
+                  </DESC>
+                  <DISPLAY-NAME>Nm/s</DISPLAY-NAME>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>radian</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">SI unit of  measuring plane angle (dimensionless)</L-2>
+                  </DESC>
+                  <DISPLAY-NAME>rad</DISPLAY-NAME>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>radian_per_second</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">angular velocity (derived from SI units)</L-2>
+                  </DESC>
+                  <DISPLAY-NAME>rad/s</DISPLAY-NAME>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>radian_per_second_squared</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">SI unit of angular acceleration</L-2>
+                  </DESC>
+                  <DISPLAY-NAME>rad/s^2</DISPLAY-NAME>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>revolutions_per_minute</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">revolutions per minute - no SI unit</L-2>
+                  </DESC>
+                  <DISPLAY-NAME>rpm</DISPLAY-NAME>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>rpm_per_second</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">time-derivative of revolutions per minute - no SI unit</L-2>
+                  </DESC>
+                  <DISPLAY-NAME>rpm/s</DISPLAY-NAME>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>second</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">SI base unit of time</L-2>
+                  </DESC>
+                  <DISPLAY-NAME>s</DISPLAY-NAME>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>volt</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">electric potential difference (derived from SI units)</L-2>
+                  </DESC>
+                  <DISPLAY-NAME>V</DISPLAY-NAME>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>hecto_pascal</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">The pascal (symbol: Pa) is the SI derived unit of pressure or stress (also: Young's modulus and tensile strength). It is equivalent to one newton per square meter. In everyday life, the pascal is perhaps best known from meteorological air-pressure reports, where it occurs in the form of hectopascal (1 hPa = 100 Pa).</L-2>
+                  </DESC>
+                  <DISPLAY-NAME>hPa</DISPLAY-NAME>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>newton_per_meter</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">surface tension (derived from SI units).</L-2>
+                  </DESC>
+                  <DISPLAY-NAME>N/m</DISPLAY-NAME>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>newton_sec_per_meter</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">damping factor or coefficient (derived from SI units)</L-2>
+                  </DESC>
+                  <DISPLAY-NAME>Ns/m</DISPLAY-NAME>
+                </UNIT>
+                <UNIT>
+                  <SHORT-NAME>meter_per_second_toPowOf3</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">jerk (derived from SI units), also called jolt (esp. in British English), surge or lurch, is the rate of change of acceleration; more precisely, the derivative of acceleration with respect to time, the second derivative of velocity, or the third derivative of displacement.</L-2>
+                  </DESC>
+                  <DISPLAY-NAME>m/s^3</DISPLAY-NAME>
+                </UNIT>
+              </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+              <SHORT-NAME>DataTypes</SHORT-NAME>
+              <ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>Boolean</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">boolean, 0 = FALSE; 1 = TRUE</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/boolean</BASE-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>SInt1</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">1 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/sint8</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt1</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>SInt10</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">10 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/sint16</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt10</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>SInt11</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">11 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/sint16</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt11</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>SInt12</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">12 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/sint16</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt12</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>SInt13</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">13 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/sint16</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt13</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>SInt14</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">14 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/sint16</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt14</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>SInt15</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">15 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/sint16</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt15</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>SInt16</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">16 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/sint16</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt16</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>SInt17</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">17 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/sint32</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt17</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>SInt18</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">18 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/sint32</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt18</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>SInt19</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">19 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/sint32</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt19</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>SInt2</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">2 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/sint8</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt2</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>SInt20</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">20 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/sint32</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt20</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>SInt21</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">21 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/sint32</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt21</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>SInt22</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">22 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/sint32</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt22</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>SInt23</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">23 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/sint32</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt23</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>SInt24</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">24 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/sint32</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt24</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>SInt25</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">25 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/sint32</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt25</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>SInt26</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">26 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/sint32</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt26</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>SInt27</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">27 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/sint32</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt27</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>SInt28</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">28 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/sint32</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt28</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>SInt29</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">29 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/sint32</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt29</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>SInt3</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">3 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/sint8</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt3</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>SInt30</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">30 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/sint32</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt30</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>SInt31</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">31 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/sint32</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt31</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>SInt32</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">32 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/sint32</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt32</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>SInt4</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">4 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/sint8</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt4</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>SInt5</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">5 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/sint8</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt5</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>SInt6</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">6 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/sint8</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt6</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>SInt7</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">7 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/sint8</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt7</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>SInt8</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">8 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/sint8</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt8</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>SInt9</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">9 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/sint16</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt9</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>UInt1</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">1 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint8</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt1</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>UInt10</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">10 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint16</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt10</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>UInt11</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">11 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint16</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt11</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>UInt12</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">12 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint16</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt12</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>UInt13</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">13 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint16</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt13</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>UInt14</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">14 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint16</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt14</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>UInt15</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">15 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint16</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt15</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>UInt16</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">16 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint16</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt16</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>UInt17</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">17 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint32</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt17</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>UInt18</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">18 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint32</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt18</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>UInt19</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">19 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint32</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt19</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>UInt2</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">2 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint8</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt2</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>UInt20</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">20 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint32</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt20</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>UInt21</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">21 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint32</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt21</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>UInt22</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">22 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint32</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt22</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>UInt23</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">23 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint32</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt23</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>UInt24</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">24 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint32</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt24</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>UInt25</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">25 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint32</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt25</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>UInt26</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">26 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint32</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt26</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>UInt27</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">27 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint32</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt27</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>UInt28</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">28 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint32</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt28</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>UInt29</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">29 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint32</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt29</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>UInt3</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">3 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint8</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt3</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>UInt30</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">30 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint32</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt30</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>UInt31</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">31 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint32</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt31</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>UInt32</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">32 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint32</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt32</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>UInt64</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">64 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint64</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt32</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>UInt4</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">4 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint8</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt4</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>UInt5</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">5 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint8</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt5</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>UInt6</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">6 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint8</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt6</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>UInt7</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">7 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint8</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt7</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>UInt8</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">8 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint8</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt8</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>UInt9</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">9 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint16</BASE-TYPE-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt9</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+              </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+              <SHORT-NAME>ApplicationDataTypes</SHORT-NAME>
+              <ELEMENTS>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>SInt1</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">1 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt1</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>SInt10</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">10 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt10</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>SInt11</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">11 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt11</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>SInt12</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">12 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt12</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>SInt13</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">13 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt13</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>SInt14</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">14 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt14</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>SInt15</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">15 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt15</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>SInt16</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">16 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt16</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>SInt17</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">17 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt17</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>SInt18</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">18 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt18</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>SInt19</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">19 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt19</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>SInt2</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">2 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt2</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>SInt20</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">20 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt20</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>SInt21</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">21 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt21</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>SInt22</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">22 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt22</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>SInt23</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">23 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt23</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>SInt24</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">24 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt24</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>SInt25</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">25 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt25</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>SInt26</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">26 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt26</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>SInt27</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">27 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt27</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>SInt28</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">28 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt28</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>SInt29</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">29 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt29</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>SInt3</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">3 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt3</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>SInt30</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">30 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt30</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>SInt31</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">31 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt31</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>SInt32</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">32 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt32</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>SInt4</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">4 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt4</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>SInt5</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">5 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt5</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>SInt6</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">6 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt6</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>SInt7</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">7 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt7</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>SInt8</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">8 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt8</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>SInt9</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">9 bit signed integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/SInt9</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>UInt1</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">1 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt1</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>UInt10</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">10 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt10</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>UInt11</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">11 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt11</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>UInt12</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">12 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt12</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>UInt13</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">13 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt13</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>UInt14</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">14 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt14</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>UInt15</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">15 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt15</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>UInt16</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">16 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt16</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>UInt17</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">17 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt17</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>UInt18</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">18 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt18</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>UInt19</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">19 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt19</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>UInt2</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">2 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt2</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>UInt20</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">20 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt20</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>UInt21</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">21 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt21</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>UInt22</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">22 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt22</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>UInt23</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">23 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt23</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>UInt24</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">24 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt24</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>UInt25</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">25 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt25</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>UInt26</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">26 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt26</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>UInt27</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">27 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt27</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>UInt28</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">28 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt28</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>UInt29</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">29 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt29</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>UInt3</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">3 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt3</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>UInt30</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">30 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt30</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>UInt31</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">31 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt31</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>UInt32</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">32 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt32</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>UInt4</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">4 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt4</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>UInt5</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">5 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt5</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>UInt6</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">6 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt6</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>UInt7</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">7 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt7</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>UInt8</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">8 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt8</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE>
+                  <SHORT-NAME>UInt9</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">9 bit unsigned integer</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/BMW/Vbf/DataConstrs/UInt9</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+              </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+              <SHORT-NAME>DataConstrs</SHORT-NAME>
+              <ELEMENTS>
+                <DATA-CONSTR>
+                  <SHORT-NAME>SInt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-1</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-1</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>SInt10</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-512</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">511</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-512</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">511</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>SInt11</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-1024</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1023</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-1024</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1023</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>SInt12</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-2048</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2047</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-2048</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2047</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>SInt13</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-4096</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4095</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-4096</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4095</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>SInt14</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-8192</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">8191</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-8192</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">8191</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>SInt15</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-16384</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">16383</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-16384</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">16383</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>SInt16</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-32768</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">32767</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-32768</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">32767</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>SInt17</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-65536</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">65535</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-65536</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">65535</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>SInt18</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-131072</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">131071</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-131072</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">131071</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>SInt19</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-262144</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">262143</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-262144</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">262143</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>SInt2</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-2</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-2</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>SInt20</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-524288</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">524287</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-524288</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">524287</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>SInt21</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-1048576</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1048575</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-1048576</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1048575</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>SInt22</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-2097152</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2097151</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-2097152</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2097151</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>SInt23</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-4194304</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4194303</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-4194304</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4194303</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>SInt24</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-8388608</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">8388607</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-8388608</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">8388607</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>SInt25</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-16777216</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">16777215</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-16777216</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">16777215</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>SInt26</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-33554432</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">33554431</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-33554432</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">33554431</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>SInt27</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-67108864</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">67108863</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-67108864</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">67108863</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>SInt28</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-134217728</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">134217727</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-134217728</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">134217727</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>SInt29</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-268435456</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">268435455</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-268435456</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">268435455</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>SInt3</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-4</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-4</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>SInt30</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-536870912</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">536870911</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-536870912</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">536870911</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>SInt31</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-1073741824</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1073741823</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-1073741824</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1073741823</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>SInt32</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-2147483648</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2147483647</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-2147483648</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2147483647</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>SInt4</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-8</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">7</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-8</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">7</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>SInt5</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-16</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">15</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-16</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">15</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>SInt6</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-32</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">31</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-32</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">31</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>SInt7</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-64</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">63</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-64</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">63</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>SInt8</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-128</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">127</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-128</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">127</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>SInt9</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-256</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-256</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>UInt1</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>UInt10</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1023</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1023</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>UInt11</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2047</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2047</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>UInt12</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4095</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4095</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>UInt13</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">8191</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">8191</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>UInt14</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">16383</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">16383</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>UInt15</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">32767</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">32767</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>UInt16</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">65535</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">65535</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>UInt17</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">131071</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">131071</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>UInt18</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">262143</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">262143</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>UInt19</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">524287</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">524287</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>UInt2</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>UInt20</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1048575</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1048575</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>UInt21</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2097151</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2097151</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>UInt22</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4194303</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4194303</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>UInt23</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">8388607</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">8388607</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>UInt24</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">16777215</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">16777215</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>UInt25</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">33554431</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">33554431</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>UInt26</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">67108863</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">67108863</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>UInt27</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">134217727</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">134217727</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>UInt28</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">268435455</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">268435455</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>UInt29</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">536870911</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">536870911</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>UInt3</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">7</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">7</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>UInt30</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1073741823</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1073741823</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>UInt31</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2147483647</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2147483647</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>UInt32</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4294967295</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4294967295</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>UInt64</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">18446744073709551615</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">18446744073709551615</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>UInt4</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">15</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">15</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>UInt5</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">31</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">31</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>UInt6</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">63</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">63</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>UInt7</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">127</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">127</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>UInt8</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR>
+                  <SHORT-NAME>UInt9</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">511</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">511</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+              </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+              <SHORT-NAME>DataTypeMappingSets</SHORT-NAME>
+              <ELEMENTS>
+                <DATA-TYPE-MAPPING-SET>
+                  <SHORT-NAME>BmwVbfStdTypes</SHORT-NAME>
+                  <DATA-TYPE-MAPS>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/SInt1</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/SInt1</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/SInt10</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/SInt10</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/SInt11</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/SInt11</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/SInt12</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/SInt12</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/SInt13</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/SInt13</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/SInt14</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/SInt14</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/SInt15</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/SInt15</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/SInt16</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/SInt16</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/SInt17</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/SInt17</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/SInt18</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/SInt18</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/SInt19</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/SInt19</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/SInt2</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/SInt2</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/SInt20</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/SInt20</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/SInt21</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/SInt21</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/SInt22</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/SInt22</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/SInt23</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/SInt23</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/SInt24</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/SInt24</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/SInt25</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/SInt25</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/SInt26</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/SInt26</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/SInt27</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/SInt27</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/SInt28</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/SInt28</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/SInt29</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/SInt29</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/SInt3</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/SInt3</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/SInt30</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/SInt30</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/SInt31</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/SInt31</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/SInt32</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/SInt32</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/SInt4</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/SInt4</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/SInt5</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/SInt5</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/SInt6</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/SInt6</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/SInt7</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/SInt7</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/SInt8</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/SInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/SInt9</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/SInt9</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/UInt1</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt1</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/UInt10</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt10</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/UInt11</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt11</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/UInt12</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt12</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/UInt13</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt13</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/UInt14</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt14</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/UInt15</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt15</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/UInt16</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt16</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/UInt17</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt17</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/UInt18</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt18</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/UInt19</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt19</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/UInt2</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt2</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/UInt20</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt20</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/UInt21</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt21</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/UInt22</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt22</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/UInt23</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt23</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/UInt24</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt24</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/UInt25</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt25</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/UInt26</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt26</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/UInt27</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt27</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/UInt28</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt28</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/UInt29</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt29</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/UInt3</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt3</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/UInt30</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt30</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/UInt31</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt31</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/UInt32</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt32</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/UInt4</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt4</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/UInt5</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt5</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/UInt6</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt6</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/UInt7</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt7</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/UInt8</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                    <DATA-TYPE-MAP>
+                      <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/BMW/Vbf/ApplicationDataTypes/UInt9</APPLICATION-DATA-TYPE-REF>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/BMW/Vbf/DataTypes/UInt9</IMPLEMENTATION-DATA-TYPE-REF>
+                    </DATA-TYPE-MAP>
+                  </DATA-TYPE-MAPS>
+                </DATA-TYPE-MAPPING-SET>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

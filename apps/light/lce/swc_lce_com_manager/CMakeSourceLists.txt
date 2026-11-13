@@ -1,0 +1,10 @@
+set(
+    SwcLceComManager_headerFiles
+    ${PROJECT_SOURCE_DIR}/apps/light/lce/swc_lce_com_manager/include/SwcLceComManager.h
+   )
+	
+set(
+    SwcLceComManager_sourceFiles
+    ${PROJECT_SOURCE_DIR}/apps/light/lce/swc_lce_com_manager/src/Rte_SwcLceComManager.cpp
+    ${PROJECT_SOURCE_DIR}/apps/light/lce/swc_lce_com_manager/src/SwcLceComManager.cpp
+   )
