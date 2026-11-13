@@ -57,3 +57,22 @@ TEST_F(SwcLceMasterTest, Run10msReadsControlSignals)
     EXPECT_EQ(5u, swc.ctrFnPosR);
     EXPECT_EQ(6u, swc.ctrFnParR);
 }
+
+/**
+ * The 10ms timing event of the component model shall trigger the runnable
+ * exactly every 10ms: not before the first period (t < 10ms) and twice
+ * within a 20ms window after the first period (t = 10ms and t = 20ms).
+ */
+TEST_F(SwcLceMasterTest, RunnableIsScheduledEvery10ms)
+{
+    using ::testing::_;
+
+    RTERunnable_SwcLceMaster_Init();
+
+    EXPECT_CALL(_mock_SwcLceMaster, Rte_Read_SwcLceMaster_comCTR_EL_F_CTR_FN_DR(_)).Times(0);
+    run(5); // before the first period: runnable must not be executed
+    ::testing::Mock::VerifyAndClearExpectations(&_mock_SwcLceMaster);
+
+    EXPECT_CALL(_mock_SwcLceMaster, Rte_Read_SwcLceMaster_comCTR_EL_F_CTR_FN_DR(_)).Times(2);
+    run(20); // executes at t = 10ms and t = 20ms
+}
